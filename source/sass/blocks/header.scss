@@ -1,0 +1,164 @@
+.header {
+  width: 1200px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  right: 50%;
+  transform:translate(-50%, -50%);
+  top: 63px;
+
+  @include vp-1199 {
+    width: 100%;
+    top: 41px;
+  }
+
+  @include vp-767 {
+    top: 50px;
+  }
+}
+
+.header__wrapper {
+  background-color: $color-navy-blue;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+
+  @include vp-1199 {
+    padding: 0;
+    height: 82px;
+  }
+
+  @include vp-767 {
+    height: 100px;
+  }
+}
+
+.header__logo-link {
+  height: 62px;
+  fill: $color-default-white;
+  z-index: 2;
+
+  @include vp-1199 {
+    top: 41px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  @include vp-767 {
+    top: 5px;
+    right: -16px;
+    left: auto;
+    transform: translate(0,0);
+  }
+}
+
+.header__nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0 40px;
+  gap: 30px;
+
+  @include vp-1199 {
+    display: none;
+    flex-direction: column;
+    flex-basis: auto;
+    gap: 18px;
+    background-color: $color-default-white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 109px 45px 65px;
+  }
+
+  @include vp-767 {
+    gap: 12px;
+    padding: 111px 15px 44px;
+  }
+}
+
+.header__nav li {
+  @include vp-1199 {
+    flex-grow: 1;
+    width: 100%;
+  }
+}
+
+.header__nav button {
+  color: $color-default-white;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  @include vp-1199 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: $color-elephant;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.header__tel-link {
+  color: $color-default-white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  padding-top: 4px;
+
+  @include vp-1199 {
+    position: absolute;
+    top: 35px;
+    right: 45px;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 0;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    right: 15px;
+    top: 73px;
+  }
+}
+
+.header__nav-toggle {
+  display: none;
+  z-index: 2;
+
+  @include vp-1199 {
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 45px;
+  }
+
+  @include vp-767 {
+    left: 15px;
+    top: 15px;
+  }
+}
+
+[data-header="nav"] {
+  display: flex;
+
+  @include vp-1199 {
+    display: none;
+  }
+}

@@ -1,0 +1,222 @@
+.reviews {
+  padding-top: 53px;
+  position: relative;
+
+  @include vp-1199 {
+    padding-top: 25px;
+    padding-bottom: 57px;
+  }
+
+  @include vp-767 {
+    padding-top: 7px;
+    padding-bottom: 30px;
+  }
+}
+
+.reviews h2 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  color: $color-elephant;
+  margin: 0;
+  margin-bottom: 27px;
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 54px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 17px;
+  }
+}
+
+.reviews span {
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  color: $color-elephant;
+  opacity: 3%;
+  position: absolute;
+  top: -17px;
+
+  @include vp-1199 {
+    font-size: 40px;
+    line-height: 48px;
+    top: -15px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+    top: -3px;
+  }
+}
+
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
+}
+
+.reviews__ratio-wrapper {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 18px 40px 19px 19px;
+  border: 1px solid $color-default-white;
+  box-shadow: 0px 0px 20px 0px rgba(28, 51, 115, 0.1);
+  background: $color-default-white;
+
+  @include vp-1199 {
+    width: 565px;
+    padding: 18px 35px 19px 19px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    padding: 20px 19px 20px 19px;
+    width: 320px;
+    gap: 14px;
+  }
+}
+
+.reviews__ratio-wrapper img{
+  padding-top: 1px;
+
+  @include vp-1199 {
+    height: 237px;
+    width: 190px;
+    object-fit: cover;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+    width: 280px;
+    height: 169px;
+  }
+}
+
+.reviews__item {
+  width: 352px;
+
+  @include vp-1199 {
+    width: 299px;
+    padding-top: 4.5px;
+  }
+
+  @include vp-767 {
+    width: 280px;
+  }
+}
+
+.reviews__item p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    width: 280px;
+  }
+}
+
+.reviews__item h3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 1px;
+
+  @include vp-1199 {
+    margin: 26px 0 -1px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 17px 0 -1px;
+  }
+}
+
+.reviews__item span {
+  position: relative;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  opacity: 1;
+  top: 0;
+}
+
+.reviews__button--prev {
+  position: absolute;
+  background-color: $color-navy-blue;
+  width: 37px;
+  height: 35px;
+  left: auto;
+  right: 161px;
+  top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include vp-1199 {
+    right: 86.5px;
+    top: 14px;
+  }
+
+  @include vp-767 {
+    top: 12px;
+    right: 56px;
+  }
+}
+
+.reviews__button--next {
+  position: absolute;
+  background-color: $color-navy-blue;
+  width: 37px;
+  height: 35px;
+  right: 120px;
+  top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include vp-1199 {
+    right: 45px;
+    top: 14px;
+  }
+
+  @include vp-767 {
+    right: 15px;
+    top: 12px;
+  }
+}
+
+.reviews__button--prev:disabled,
+.reviews__button--next:disabled {
+  background-color: #999999;
+}
+
+.reviews__button--prev::after {
+  display: none;
+}
+
+.reviews__button--next::after {
+  display: none;
+}

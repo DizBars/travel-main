@@ -1,0 +1,290 @@
+.tours {
+  padding: 122px 0 109px;
+  position: relative;
+
+  @include vp-1199 {
+    padding: 68px 0 54px;
+  }
+
+  @include vp-767 {
+    padding: 55px 0 29px;
+  }
+}
+
+.tours h2{
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  color: $color-elephant;
+  margin: 0;
+  margin-bottom: 51px;
+
+  @include vp-1199 {
+    margin-bottom: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+}
+
+.tours span{
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  color: $color-elephant;
+  opacity: 3%;
+  position: absolute;
+  top: 106px;
+
+  @include vp-1199 {
+    top: -16px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+    top: -6px;
+  }
+}
+
+.tours__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tours__ratio-wrapper {
+  width: 380px;
+  height: 416px;
+
+  @include vp-1199 {
+    width: 330px;
+    height: 416px;
+  }
+}
+
+.tours__ratio-wrapper img{
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.tours__item {
+  position: relative;
+  color: $color-default-white;
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  width: 380px;
+  height: 416px;
+
+  @include vp-1199 {
+    width: 330px;
+    height: 416px;
+  }
+
+  @include vp-767 {
+    width: 320px;
+  }
+}
+
+.tours__item h3{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.tours__item span{
+  color: $color-default-white;
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  padding: 6px 12.5px;
+  background-color: $color-navy-blue;
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.tours__item p{
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  margin: 0;
+}
+
+.tours__times span {
+  color: $color-default-white;
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.tours__dates span,
+.tours__groupe span {
+  color: $color-default-white;
+  opacity: 1;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+}
+
+.tours__item-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tours__times {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.tours__info {
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+  width: 100%;
+
+  @include vp-1199 {
+    gap: 27px;
+  }
+
+  @include vp-767 {
+    gap: 23px;
+  }
+}
+
+.tours__stars {
+  display: flex;
+  gap: 1px;
+}
+
+.tours__complexity {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tours__dates,
+.tours__groupe {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.tours__swiper {
+  margin-bottom: 64px;
+  position: relative;
+
+  @include vp-1199 {
+    margin-bottom: 36px;
+  }
+}
+
+.tours__link {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: $color-elephant;
+  text-transform: uppercase;
+  gap: 12px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.tours__background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+
+  @include vp-767 {
+    top: 104px;
+    width: 173px;
+    height: 595px;
+  }
+}
+
+.tours__button--prev {
+  position: absolute;
+  background-color: $color-navy-blue;
+  width: 37px;
+  height: 35px;
+  left: auto;
+  right: 161px;
+  top: 20px;
+
+  @include vp-1199 {
+    top: 19px;
+    right: 86px;
+  }
+
+  @include vp-767 {
+    top: 7px;
+    right: 56px;
+  }
+}
+
+.tours__button--next {
+  position: absolute;
+  background-color: $color-navy-blue;
+  width: 37px;
+  height: 35px;
+  right: 120px;
+  top: 20px;
+
+  @include vp-1199 {
+    top: 19px;
+    right: 45px;
+  }
+
+  @include vp-767 {
+    top: 7px;
+    right: 15px;
+  }
+}
+
+.tours__button--prev:disabled,
+.tours__button--next:disabled {
+  background-color: #999999;
+}
+
+.tours__button--prev::after {
+  display: none;
+}
+
+.tours__button--next::after {
+  display: none;
+}

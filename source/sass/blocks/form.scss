@@ -1,0 +1,29 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+
+  @include vp-1199 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+  }
+
+  @include vp-767 {
+    gap: 8px;
+  }
+}
+
+.form__button {
+  padding: 20px 45px;
+
+  @include vp-1199 {
+    padding: 20px 90px;
+  }
+
+  @include vp-767 {
+    padding: 21px 100px;
+  }
+}

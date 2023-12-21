@@ -1,0 +1,404 @@
+.education {
+  position: relative;
+  padding: 43px 0 24px;
+
+  @include vp-1199 {
+    padding: 63px 0 54px;
+  }
+
+  @include vp-767 {
+    padding: 27px 0 20px;
+  }
+}
+
+.education h2{
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  color: $color-elephant;
+  margin: 0;
+  margin-bottom: 32px;
+
+  @include vp-1199 {
+    margin-bottom: 21px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 17px;
+  }
+}
+
+.education p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-elephant;
+  margin: 0;
+  margin-bottom: 60px;
+
+  @include vp-1199 {
+    max-width: 540px;
+    margin-bottom: 29px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 27px;
+  }
+}
+
+.education h3{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $color-elephant;
+  margin: 0;
+  margin-bottom: 52px;
+
+  @include vp-1199 {
+    margin-bottom: 62px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 57px;
+  }
+}
+
+.education span{
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  color: $color-elephant;
+  opacity: 3%;
+  position: absolute;
+  top: -17px;
+
+  @include vp-1199 {
+    font-size: 40px;
+    line-height: 40px;
+    top: -13px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+    top: -4px;
+  }
+}
+
+.education__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.education__ratio-wrapper {
+  border: 1px solid rgba(2, 100, 192, 0.1);
+  padding: 14px;
+  background-color: $color-default-white;
+  position: relative;
+  min-height: 356px;
+
+  @include vp-1199 {
+    min-width: 212px;
+    min-height: 388px;
+  }
+
+  @include vp-767 {
+    min-height: 356px;
+  }
+}
+
+.education__item h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $color-elephant;
+  margin: 16px 0 14px;
+}
+
+.education__item a {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 14px;
+  top: 229px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgb(46, 57, 64, 0.3);
+}
+
+.education__item p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-elephant;
+  margin: 0;
+}
+
+.education__item img {
+  @include vp-1199 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 200px;
+  }
+}
+
+.education__button--prev {
+  position: absolute;
+  background-color: $color-navy-blue;
+  width: 37px;
+  height: 35px;
+  left: auto;
+  right: 161px;
+  top: 215px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include vp-1199 {
+    right: 86px;
+    top: 187px;
+  }
+
+  @include vp-767 {
+    right: 56px;
+    top: 226px;
+  }
+}
+
+.education__button--next {
+  position: absolute;
+  background-color: $color-navy-blue;
+  width: 37px;
+  height: 35px;
+  right: 120px;
+  top: 215px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include vp-1199 {
+    right: 45px;
+    top: 187px;
+  }
+
+  @include vp-767 {
+    right: 15px;
+    top: 226px;
+  }
+}
+
+.education__button--prev:disabled,
+.education__button--next:disabled {
+  background-color: #999999;
+}
+
+.education__button--prev::after {
+  display: none;
+}
+
+.education__button--next::after {
+  display: none;
+}
+
+.education__swiper {
+  margin-bottom: 58px;
+
+  @include vp-1199 {
+    margin-bottom: 27px;
+  }
+}
+
+.education__process {
+  padding-left: 120px;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+
+  @include vp-1199 {
+    padding-left: 45px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+  }
+}
+
+.education__process h5 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $color-elephant;
+  margin: 0;
+  margin-bottom: 27px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.education__process ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 91px 62px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 29px;
+  }
+}
+
+.education__map {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.education__boots {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.education__pine-tree {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.education__mountain {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.education__process li {
+  display: flex;
+  flex-direction: row;
+  width: 253px;
+  gap: 10px;
+  position: relative;
+
+  @include vp-1199 {
+    width: 237px;
+  }
+
+  @include vp-767 {
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.education__process p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-elephant;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.education__svg {
+  padding-top: 2px;
+}
+
+.education__svg svg {
+  @include vp-767 {
+    width: 21px;
+    height: 19px;
+  }
+}
+
+.education__process ul::after {
+  content: "";
+  height: 2px;
+  width: fill;
+  background-color: $color-navy-blue;
+  opacity: 0.2;
+  position: absolute;
+  z-index: 3;
+  display: inline-block;
+  bottom: -10px;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+    height: 183px;
+    width: 1px;
+    bottom: 17px;
+    left: 21px;
+    opacity: 0.1;
+  }
+}
+
+.education__process li::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  background-color: $color-navy-blue;
+  position: absolute;
+  z-index: 3;
+  display: inline-block;
+  bottom: -16px;
+  border-radius: 50%;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+    height: 13px;
+    bottom: 11px;
+    left: -29px;
+  }
+}
+
+.education__points {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+    position: absolute;
+    top: 112px;
+    left: 55px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
