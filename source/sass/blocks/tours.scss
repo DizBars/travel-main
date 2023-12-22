@@ -288,3 +288,14 @@
 .tours__button--next::after {
   display: none;
 }
+
+.tours__item h3::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  background-color: $color-default-white;
+  opacity: 0.2;
+  left: 20px;
+  bottom: 76.5px;
+}

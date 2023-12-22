@@ -1,5 +1,7 @@
 .contacts {
   padding: 88px 120px 95px;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include vp-1199 {
     padding: 57px 0 39px;

@@ -1,22 +1,22 @@
-const scrollButtonTours = document.querySelector('[data-nav="tours"]');
+const scrollButtonTours = document.querySelectorAll('[data-nav="tours"]');
 const scrollTargetTours = document.querySelector('[data-tours]');
-const scrollButtonEducation = document.querySelector('[data-nav="education"]');
+const scrollButtonEducation = document.querySelectorAll('[data-nav="education"]');
 const scrollTargetEducation = document.querySelector('[data-education]');
-const scrollButtonAbout = document.querySelector('[data-nav="about"]');
+const scrollButtonAbout = document.querySelectorAll('[data-nav="about"]');
 const scrollTargetAbout = document.querySelector('[data-about]');
-const scrollButtonReviews = document.querySelector('[data-nav="reviews"]');
+const scrollButtonReviews = document.querySelectorAll('[data-nav="reviews"]');
 const scrollTargetReviews = document.querySelector('[data-reviews]');
-const scrollButtonPhotos = document.querySelector('[data-nav="photos"]');
+const scrollButtonPhotos = document.querySelectorAll('[data-nav="photos"]');
 const scrollTargetPhotos = document.querySelector('[data-photos]');
-const scrollButtonContacts = document.querySelector('[data-nav="contacts"]');
+const scrollButtonContacts = document.querySelectorAll('[data-nav="contacts"]');
 const scrollTargetContacts = document.querySelector('[data-contacts]');
 
-scrollButtonTours.addEventListener('click', scrollTours);
-scrollButtonEducation.addEventListener('click', scrollEducation);
-scrollButtonAbout.addEventListener('click', scrollAbout);
-scrollButtonReviews.addEventListener('click', scrollReviews);
-scrollButtonPhotos.addEventListener('click', scrollPhotos);
-scrollButtonContacts.addEventListener('click', scrollContacts);
+scrollButtonTours.forEach((button) => button.addEventListener('click', scrollTours));
+scrollButtonEducation.forEach((button) => button.addEventListener('click', scrollEducation));
+scrollButtonAbout.forEach((button) => button.addEventListener('click', scrollAbout));
+scrollButtonReviews.forEach((button) => button.addEventListener('click', scrollReviews));
+scrollButtonPhotos.forEach((button) => button.addEventListener('click', scrollPhotos));
+scrollButtonContacts.forEach((button) => button.addEventListener('click', scrollContacts));
 
 function scrollTours() {
   scrollTargetTours.scrollIntoView({block: 'center', behavior: 'smooth'});

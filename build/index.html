@@ -20,7 +20,7 @@
 
 <body>
   <div class="wrapper">
-    <header>
+    <header data-test="hero">
       <h1 class="visually-hidden">Lifetour - Организация походов в горы.</h1>
       <div class="header">
         <div class="header__wrapper">
@@ -231,7 +231,7 @@
       </div>
     </header>
     <main>
-      <section class="tours" data-tours>
+      <section class="tours" data-tours data-test="tours">
         <div class="container">
           <h2>Ближайшие туры</h2>
           <span>Ближайшие туры</span>
@@ -513,7 +513,7 @@
           </picture>
         </div>
       </section>
-      <section class="education" data-education>
+      <section class="education" data-education data-test="training">
         <div class="container">
           <h2>Обучение</h2>
           <span>Обучение</span>
@@ -696,7 +696,7 @@
           </div>
         </div>
       </section>
-      <section class="about" data-about>
+      <section class="about" data-about data-test="about">
         <div class="about__background">
           <picture>
             <source type="image/png" media="(max-width: 767px)"
@@ -725,7 +725,7 @@
             приключением<br class="br--tablet"> в приятной компании.</p>
         </div>
       </section>
-      <section class="reviews" data-reviews>
+      <section class="reviews" data-reviews data-test="reviews">
         <div class="reviews__container container">
           <h2>Отзывы</h2>
           <span>Отзывы</span>
@@ -823,7 +823,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="adv">
         <h2>Преимущества</h2>
         <span>Преимущества</span>
         <div class="advantages__background">
@@ -912,7 +912,7 @@
           </svg>
         </div>
       </section>
-      <section class="gallery" data-photos>
+      <section class="gallery" data-photos data-test="gallery">
         <div class="gallery__wrapper">
           <h2>Фотогалерея</h2>
           <span>Фотогалерея</span>
@@ -1046,7 +1046,7 @@
           </svg>
         </div>
       </section>
-      <section class="questions">
+      <section class="questions" data-test="form">
         <div class="questions__background">
           <picture>
             <source type="image/png" media="(max-width: 767px)"
@@ -1074,12 +1074,12 @@
                   <input type="tel" name="user-phone" placeholder="Телефон" aria-invalid="false">
                 </label>
               </div>
-              <div class="custom-input" data-validate-type="text" data-limitation="name"
+              <div class="custom-input" data-validate-type="email" data-limitation="email"
                 data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность ввода"
                 data-required="#">
                 <label>
                   <span class="visually-hidden">email</span>
-                  <input type="text" name="user-name" placeholder="Email" aria-invalid="false">
+                  <input type="email" name="user-email" placeholder="Email" aria-invalid="false">
                 </label>
               </div>
               <button class="button button--primary form__button" type="submit">Отправить</button>
@@ -1087,7 +1087,7 @@
           </form>
         </div>
       </section>
-      <section class="contacts" data-contacts>
+      <section class="contacts" data-contacts data-test="footer">
         <div class="contacts__container">
           <div class="contacts__wrapper">
             <h2>Контакты</h2>
@@ -1140,7 +1140,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" >
       <div class="footer__container container">
         <div class="footer__wrapper">
           <svg width="142" height="42" role="img">

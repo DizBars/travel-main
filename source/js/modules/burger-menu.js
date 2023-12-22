@@ -12,6 +12,17 @@ window.addEventListener('resize', () => {
     navList.style.display = 'flex';
   } else {
     navList.style.display = 'none';
+    navButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        navHeader.classList.add('header__nav--closed');
+        navHeader.classList.remove('header__nav--opened');
+        openToggle.style.display = 'none';
+        closeToggle.style.display = 'block';
+        navList.style.display = 'none';
+        headerLogo.style.fill = '#FFFFFF';
+        headerTel.style.color = '#FFFFFF';
+      });
+    });
   }
 });
 
@@ -38,7 +49,7 @@ navToggle.addEventListener('click', function () {
       headerTel.style.right = '45px';
       navToggle.style.left = '45px';
     }
-  } else {
+  } else if (document.documentElement.clientWidth > 320 && document.documentElement.clientWidth < 768) {
     if (navHeader.classList.contains('header__nav--closed')) {
       navHeader.classList.remove('header__nav--closed');
       navHeader.classList.add('header__nav--opened');
@@ -58,16 +69,3 @@ navToggle.addEventListener('click', function () {
     }
   }
 });
-
-navButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    navHeader.classList.add('header__nav--closed');
-    navHeader.classList.remove('header__nav--opened');
-    openToggle.style.display = 'none';
-    closeToggle.style.display = 'block';
-    navList.style.display = 'none';
-    headerLogo.style.fill = '#FFFFFF';
-    headerTel.style.color = '#FFFFFF';
-  });
-});
-

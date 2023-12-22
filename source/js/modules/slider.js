@@ -40,6 +40,7 @@ function toursSlider() {
       breakpoints: {
         320: {
           spaceBetween: 18,
+          slidesPerView: '1',
         },
         768: {
           spaceBetween: 18,
@@ -47,7 +48,7 @@ function toursSlider() {
         },
         1200: {
           spaceBetween: 30,
-          slidesPerView: '1',
+          slidesPerView: 'auto',
         },
       },
     });
@@ -155,8 +156,10 @@ function gallerySlider() {
         },
         768: {
           initialSlide: 5,
+          slidesPerView: '3',
         },
         1200: {
+          slidesPerView: 'auto',
         },
       },
     });

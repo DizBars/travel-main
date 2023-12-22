@@ -1699,8 +1699,8 @@ button,
 .custom-input .input-message,
 .custom-textarea .input-message {
   position: absolute;
-  right: 0;
-  bottom: -5px;
+  right: 50px;
+  bottom: -30px;
 }
 .custom-input .input-message.is-invalid,
 .custom-textarea .input-message.is-invalid {
@@ -2577,6 +2577,17 @@ button,
 
 .tours__button--next::after {
   display: none;
+}
+
+.tours__item h3::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 0.2;
+  left: 20px;
+  bottom: 76.5px;
 }
 
 .education {
@@ -4165,6 +4176,8 @@ button,
 
 .contacts {
   padding: 88px 120px 95px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 @media (max-width: 1199px) {
   .contacts {
