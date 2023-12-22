@@ -1765,9 +1765,19 @@ button,
 }
 
 .header__logo-link {
-  height: 62px;
   fill: #ffffff;
   z-index: 2;
+  width: 205px;
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1199px) {
   .header__logo-link {
@@ -1781,8 +1791,10 @@ button,
 }
 @media (max-width: 767px) {
   .header__logo-link {
-    top: 5px;
-    right: -16px;
+    width: 142px;
+    height: 42px;
+    top: 15px;
+    right: 15px;
     left: auto;
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
@@ -4491,6 +4503,7 @@ button,
 .footer__wrapper svg {
   margin-right: 28px;
   margin-left: 30px;
+  fill: #2D383F;
 }
 @media (max-width: 1199px) {
   .footer__wrapper svg {

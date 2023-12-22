@@ -37,9 +37,13 @@
 }
 
 .header__logo-link {
-  height: 62px;
   fill: $color-default-white;
   z-index: 2;
+  width: 205px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include vp-1199 {
     top: 41px;
@@ -49,8 +53,10 @@
   }
 
   @include vp-767 {
-    top: 5px;
-    right: -16px;
+    width: 142px;
+    height: 42px;
+    top: 15px;
+    right: 15px;
     left: auto;
     transform: translate(0,0);
   }
