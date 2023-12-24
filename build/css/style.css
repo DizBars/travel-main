@@ -3534,6 +3534,11 @@ button,
     top: 113px;
   }
 }
+@media (max-width: 767px) {
+  .advantages__background {
+    display: none;
+  }
+}
 
 .advantages h2 {
   font-size: 35px;

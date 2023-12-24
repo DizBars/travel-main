@@ -21,6 +21,10 @@
   @include vp-1199 {
     top: 113px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .advantages h2 {
