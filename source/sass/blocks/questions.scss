@@ -20,6 +20,10 @@
 
 .questions__background img {
   object-fit: cover;
+
+  @include vp-767 {
+    height: 620px;
+  }
 }
 
 .questions h2 {

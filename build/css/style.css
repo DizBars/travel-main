@@ -4090,6 +4090,11 @@ button,
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 767px) {
+  .questions__background img {
+    height: 620px;
+  }
+}
 
 .questions h2 {
   font-size: 35px;
