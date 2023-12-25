@@ -206,7 +206,7 @@
                   ландшафтов Алтайских гор.</p>
                 <button class="hero__button button button--primary">Смотреть тур</button>
                 <div class="hero__audio">
-                  <iframe frameborder="0" style="border:none;width:380px;height:220px;border-radius:12px;" width="380"
+                  <iframe frameborder="0" loading=lazy style="border:none;width:380px;height:220px;border-radius:12px;" width="380"
                     height="220" src="https://music.yandex.ru/iframe/track/112912322/25474374">Слушайте <a
                       href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
                       фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
@@ -505,8 +505,8 @@
               srcset="img/content/clouds-mobile.png 1x, img/content/clouds-mobile@2x.png 2x">
             <source type="image/webp" media="(max-width: 767px)"
               srcset="img/content/clouds-mobile.webp 1x, img/content/clouds-mobile@2x.webp 2x">
-            <source type="image/png" srcset="img/content/clouds-tablet.png 1x, img/content/clouds-tablet@2x.png  2x">
-            <source type="image/webp" srcset="img/content/clouds-tablet.webp 1x, img/content/clouds-tablet@2x.webp  2x">
+            <source type="image/png" media="(max-width: 1199px)" srcset="img/content/clouds-tablet.png 1x, img/content/clouds-tablet@2x.png  2x">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/clouds-tablet.webp 1x, img/content/clouds-tablet@2x.webp  2x">
             <source type="image/webp" srcset="img/content/clouds.webp 1x, img/content/clouds@2x.webp  2x">
             <img src="img/content/clouds.png" width="602" height="1630" srcset="img/content/clouds@2x.png 2x"
               alt="clouds.">
@@ -686,7 +686,7 @@
                   <use href="img/sprite.svg#mountain"></use>
                 </svg>
               </div>
-              <p>Разъяснение<br class="br--desktop"> сложности горных<br class="br--desktop"> препятствий</p>
+              <p>Разъяснение<br class="br--desktop"> сложности<br class="br--mobile"> горных<br class="br--desktop"> препятствий</p>
             </li>
           </ul>
           <div class="education__points">
@@ -703,6 +703,10 @@
               srcset="img/content/about-mobile.png 1x, img/content/about-mobile@2x.png 2x">
             <source type="image/webp" media="(max-width: 767px)"
               srcset="img/content/about-mobile.webp 1x, img/content/about-mobile@2x.webp 2x">
+              <source type="image/png" media="(max-width: 1199px)"
+              srcset="img/content/about-tablet.png 1x, img/content/about-tablet@2x.png 2x">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="img/content/about-tablet.webp 1x, img/content/about-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/content/about.webp 1x, img/content/about@2x.webp 2x">
             <img src="img/content/about.png" srcset="img/content/about@2x.png" width="808" height="474"
               alt="Федор Кайгородов.">
@@ -711,18 +715,24 @@
         <div class="about__wrapper">
           <h2>О нас</h2>
           <span>О нас</span>
+          <ul class="about__list">
+            <li class="about__item">
           <h3>История компании</h3>
           <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения,<br class="br--tablet">
             нам это настолько
             понравилось,<br class="br--tablet"> что мы этим стали жить.<br class="br--desktop"> Спустя 5 лет, в 2005
             году мы основали компанию, чтобы показывать
             людям удивительные места нашей страны.</p>
+          </li>
+          <li class="about__item">
           <h3>Наша цель</h3>
           <p>Подарить вам незабываемые впечатления от похода в горы.<br class="br--tablet"> Мы берём на себя <br
-              class="br--tablet br--mobile">все организационные вопросы.<br class="br--tablet br--mobile"> При
+              class="br--mobile"><br class="br--tablet">все организационные вопросы.<br class="br--tablet"><br class="br--mobile"> При
             организации мы обязательно учтём<br class="br--desktop"> все ваши пожелания.<br class="br--tablet"> Вам
             останется только наслаждаться незабываемым
             приключением<br class="br--tablet"> в приятной компании.</p>
+          </li>
+          </ul>
         </div>
       </section>
       <section class="reviews" data-reviews data-test="reviews">
@@ -743,7 +753,7 @@
                 </picture>
                 <div class="reviews__item">
                   <p>Осенью ходили в поход на Алтай<br class="br--mobile"> с друзьями. Впечатления потрясающие! Инструкторы — настоящие
-                    эксперты — всему научили,<br class="br--tablet br--desktop"> все показали. Делились увлекательными историями о местах, людях,
+                    эксперты — всему научили,<br class="br--tablet"><br class="br--desktop"> все показали. Делились увлекательными историями о местах, людях,
                     культуре места.</p>
                   <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после.<br class="br--mobile"> Ещё никогда не отдыхал так
                     душой <br class="br--mobile">и телом. Всем очень рекомендую!</p>
@@ -846,8 +856,8 @@
                 </svg>
                 <h3>Безопасность</h3>
                 <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем
-                  планы действий<br class="br--desktop br--mobile"> на случай непредвиденных обстоятельств<br class="br--desktop br--mobile">
-                  и даем гарантию полной безопасности<br class="br--desktop br--mobile">
+                  планы действий<br class="br--mobile"><br class="br--desktop"> на случай непредвиденных обстоятельств<br class="br--mobile"><br class="br--desktop">
+                  и даем гарантию полной безопасности<br class="br--mobile"><br class="br--desktop">
                   во время всего тура.</p>
               </div>
             </li>
@@ -869,11 +879,11 @@
                   <use href="img/sprite.svg#boots-1"></use>
                 </svg>
                 <h3>Оборудование и снаряжение</h3>
-                <p>Мы предоставляем клиентам<br class="br--desktop br--tablet"> все необходимое оборудование, необходимое для путешествия.<br
+                <p>Мы предоставляем клиентам<br class="br--tablet"><br class="br--desktop"> все необходимое оборудование, необходимое для путешествия.<br
                     class="br--tablet"> Это
-                  избавляет клиентов<br class="br--tablet"> от необходимости покупать, брать<br class="br--desktop br--tablet"> с собой снаряжение,<br class="br--mobile"> что
+                  избавляет клиентов<br class="br--tablet"> от необходимости покупать, брать<br class="br--tablet"><br class="br--desktop"> с собой снаряжение,<br class="br--mobile"> что
                   делает путешествие
-                  более удобным<br class="br--tablet br--mobile"> и экономически выгодным.</p>
+                  более удобным<br class="br--mobile"><br class="br--tablet"> и экономически выгодным.</p>
               </div>
             </li>
             <li class="advantages__ratio-wrapper swiper-slide">
@@ -894,7 +904,7 @@
                 <svg width="22" height="22" role="img">
                   <use href="img/sprite.svg#leaf"></use>
                 </svg>
-                <h3>Бережное отношение<br class="br--tablet br--mobile"> к природе</h3>
+                <h3>Бережное отношение<br class="br--mobile"><br class="br--tablet"> к природе</h3>
                 <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
                   воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
               </div>
@@ -979,11 +989,9 @@
               <div class="gallery__item">
                 <picture>
                   <source type="image/png" media="(max-width: 767px)"
-                    srcset="img/content/gallery/gallery-4.png 1x, img/content/gallery/gallery-4@2x.png 2x" width="158.5"
-                    height="260">
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/content/gallery/gallery-4.webp 1x, img/content/gallery/gallery-4@2x.webp 2x" width="158.5"
-                    height="260">
+                  srcset="img/content/gallery-4-mobile.png 1x, img/content/gallery-4-mobile@2x.png 2x">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/content/gallery-4-mobile.webp 1x, img/content/gallery-4-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/content/gallery-4-tablet.webp 1x, img/content/gallery-4-tablet@2x.webp  2x">
                   <source type="image/png" media="(max-width: 1199px)"
@@ -999,11 +1007,13 @@
               <div class="gallery__item">
                 <picture>
                   <source type="image/png" media="(max-width: 767px)"
-                    srcset="img/content/gallery/gallery-5.png 1x, img/content/gallery/gallery-5@2x.png 2x" width="158.5"
-                    height="100">
+                    srcset="img/content/gallery-5-mobile.png 1x, img/content/gallery-5-mobile@2x.png 2x">
                   <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/content/gallery/gallery-5.webp 1x, img/content/gallery/gallery-5@2x.webp 2x" width="158.5"
-                    height="100">
+                    srcset="img/content/gallery-5-mobile.webp 1x, img/content/gallery-5-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/content/gallery-5-tablet.webp 1x, img/content/gallery-5-tablet@2x.webp  2x">
+                  <source type="image/png" media="(max-width: 1199px)"
+                    srcset="img/content/gallery-5-tablet.png 1x, img/content/gallery-5-tablet@2x.png  2x">
                   <source type="image/webp"
                     srcset="img/content/gallery/gallery-5.webp 1x, img/content/gallery/gallery-5@2x.webp 2x">
                   <img src="img/content/gallery/gallery-5.png" srcset="img/content/gallery/gallery-5@2x.png" width="298"
@@ -1011,11 +1021,13 @@
                 </picture>
                 <picture>
                   <source type="image/png" media="(max-width: 767px)"
-                    srcset="img/content/gallery/gallery-6.png 1x, img/content/gallery/gallery-6@2x.png 2x" width="158.5"
-                    height="157">
+                    srcset="img/content/gallery-6-mobile.png 1x, img/content/gallery-6-mobile@2x.png 2x">
                   <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/content/gallery/gallery-6.webp 1x, img/content/gallery/gallery-6@2x.webp 2x" width="158.5"
-                    height="157">
+                    srcset="img/content/gallery-6-mobile.webp 1x, img/content/gallery-6-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/content/gallery-6-tablet.webp 1x, img/content/gallery-6-tablet@2x.webp  2x">
+                  <source type="image/png" media="(max-width: 1199px)"
+                    srcset="img/content/gallery-6-tablet.png 1x, img/content/gallery-6-tablet@2x.png  2x">
                   <source type="image/webp"
                     srcset="img/content/gallery/gallery-6.webp 1x, img/content/gallery/gallery-6@2x.webp 2x">
                   <img src="img/content/gallery/gallery-6.png" srcset="img/content/gallery/gallery-6@2x.png" width="298"
@@ -1026,6 +1038,14 @@
             <li class="gallery__ratio-wrapper gallery__ratio-wrapper--5 swiper-slide">
               <div class="gallery__item">
                 <picture>
+                  <source type="image/png" media="(max-width: 767px)"
+                    srcset="img/content/gallery-7-mobile.png 1x, img/content/gallery-7-mobile@2x.png 2x">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/content/gallery-7-mobile.webp 1x, img/content/gallery-7-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/content/gallery-7-tablet.webp 1x, img/content/gallery-7-tablet@2x.webp  2x">
+                  <source type="image/png" media="(max-width: 1199px)"
+                    srcset="img/content/gallery-7-tablet.png 1x, img/content/gallery-7-tablet@2x.png  2x">
                   <source type="image/webp"
                     srcset="img/content/gallery/gallery-7.webp 1x, img/content/gallery/gallery-7@2x.webp 2x">
                   <img src="img/content/gallery/gallery-7.png" srcset="img/content/gallery/gallery-7@2x.png" width="276"
@@ -1087,12 +1107,14 @@
           </form>
         </div>
       </section>
-      <section class="contacts" data-contacts data-test="footer">
+    </main>
+    <footer class="footer" data-test="footer">
+      <section class="contacts" data-contacts >
         <div class="contacts__container">
           <div class="contacts__wrapper">
             <h2>Контакты</h2>
             <span>Контакты</span>
-            <p>Свяжитесь с нами любым удобным <br class="br--mobile"> для вас способом <br class="br--desktop br--tablet">или приходите<br class="br--mobile"> к нам в гости. Мы будем рады поделиться
+            <p>Свяжитесь с нами любым удобным <br class="br--mobile">для вас способом <br class="br--desktop"><br class="br--tablet">или приходите<br class="br--mobile"> к нам в гости. Мы будем рады поделиться
               увлекательными историями и подобрать для вас тур.</p>
             <ul class="contacts__info">
               <li>
@@ -1139,8 +1161,7 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="footer" >
+      <section class="footer__lower">
       <div class="footer__container container">
         <div class="footer__wrapper">
           <svg width="142" height="42" role="img">
@@ -1200,6 +1221,7 @@
         </div>
         <span class="footer__footnote">Политика конфиденциальности</span>
       </div>
+    </section>
     </footer>
   </div>
 

@@ -30,7 +30,7 @@
   }
 }
 
-.tours span{
+.tours span {
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
@@ -117,6 +117,12 @@
   align-items: center;
   gap: 6px;
   margin-bottom: 16px;
+
+  @include vp-767 {
+    top: 0;
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
 .tours__item p{
@@ -137,9 +143,31 @@
   padding: 0;
   display: flex;
   gap: 12px;
+
+  @include vp-767 {
+    top: 0;
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
-.tours__dates span,
+.tours__dates span {
+  color: $color-default-white;
+  opacity: 1;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+
+  @include vp-767 {
+    top: 0;
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
 .tours__groupe span {
   color: $color-default-white;
   opacity: 1;
@@ -149,6 +177,12 @@
   background-color: transparent;
   position: relative;
   padding: 0;
+
+  @include vp-767 {
+    top: 0;
+    font-size: 13px;
+    line-height: 13px;
+  }
 }
 
 .tours__item-wrapper {

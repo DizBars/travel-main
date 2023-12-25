@@ -1,9 +1,9 @@
-.footer {
+.footer__lower {
   border-top: 1px solid rgba(46, 57, 64, 0.2);
   padding: 41px 0 32px;
 
   @include vp-1199 {
-    padding: 34px 0 20px;
+    padding: 34px 0 21px;
   }
 
   @include vp-767 {
@@ -116,6 +116,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  color: $color-elephant;
 
   @include vp-1199 {
     font-size: 14px;
