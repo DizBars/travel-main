@@ -188,6 +188,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: $color-default-white;
+
+  @include hover-focus {
+    background-color: transparent;
+    outline: 1px solid #1c3374;
+    outline-offset: -1px;
+    fill: #1c3374;
+  }
+
+  @include active {
+    background-color: #1c3374;
+    fill: $color-default-white;
+  }
 
   @include vp-1199 {
     display: none;
@@ -205,6 +218,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: $color-default-white;
+
+  @include hover-focus {
+    background-color: transparent;
+    outline: 1px solid #1c3374;
+    outline-offset: -1px;
+    fill: #1c3374;
+  }
+
+  @include active {
+    background-color: #1c3374;
+    fill: $color-default-white;
+  }
 
   @include vp-1199 {
     display: none;

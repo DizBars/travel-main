@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {heroSlider, toursSlider, educationSlider, reviewsSlider, advantagesSlider, gallerySlider, handleResize} from './modules/slider';
 import './modules/scroll';
 import './modules/burger-menu';
+import {embedVideo} from './modules/videoplayer';
 
 // ---------------------------------
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     advantagesSlider();
     gallerySlider();
     handleResize();
+    embedVideo();
   });
 });
 

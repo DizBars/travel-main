@@ -45,6 +45,19 @@
   align-items: center;
   justify-content: center;
 
+  @include hover-focus {
+    fill: #1c3374;
+    outline: none;
+  }
+
+  @include active {
+    fill: #0266c1;
+  }
+
+  &:disabled {
+    fill: $color-default-white;
+  }
+
   @include vp-1199 {
     top: 41px;
     position: absolute;
@@ -103,6 +116,26 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
+  padding: 3px 0;
+
+  &:disabled {
+    border: none;
+    cursor: default;
+  }
+
+  @include hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  @include focus {
+    border: 1px solid $color-default-white;
+    outline: none;
+  }
+
+  @include active {
+    border: none;
+  }
 
   @include vp-1199 {
     font-size: 16px;
@@ -112,11 +145,38 @@
     color: $color-elephant;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    padding: 0;
+
+    @include hover-focus {
+      color: #1c3374;
+      outline: none;
+    }
+
+    @include active {
+      color: #0266c1;
+    }
+
+    &:disabled {
+      color: #0266c1;
+    }
   }
 
   @include vp-767 {
     font-size: 14px;
     line-height: 14px;
+
+    @include hover-focus {
+    color: #1c3374;
+    outline: none;
+  }
+
+    @include active {
+      color: #0266c1;
+    }
+
+    &:disabled {
+      color: #0266c1;
+    }
   }
 }
 
@@ -126,6 +186,19 @@
   line-height: 18px;
   font-weight: 600;
   padding-top: 4px;
+
+  @include hover-focus {
+    color: #1c3374;
+    outline: none;
+  }
+
+  @include active {
+    color: #0266c1;
+  }
+
+  &:disabled {
+    color: $color-default-white;
+  }
 
   @include vp-1199 {
     position: absolute;

@@ -50,6 +50,7 @@
   width: 1200px;
   margin: 0 auto;
   position: relative;
+  z-index: -1;
 
   @include vp-1199 {
     width: 100%;
@@ -210,7 +211,40 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  inset: 0 1px -5px 6px;
+  bottom: 128px;
+  left: 215px;
+  cursor: pointer;
+  z-index: 10;
+  width: 56px;
+  height: 56px;
+  display: block;
+  fill: $color-default-white;
+
+  @include vp-1199 {
+    bottom: 120px;
+    left: 195px;
+  }
+
+  @include hover-focus {
+    &::before {
+      border: 1px solid #1c3374;
+    }
+  }
+
+  @include active {
+    &::before {
+      background-color: rgb(28, 51, 115, 0.2);
+      border: none;
+      fill: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    &::before {
+      border: 1px solid $color-navy-blue;
+      fill: $color-navy-blue;
+    }
+  }
 
   &::before {
     position: absolute;
@@ -253,4 +287,15 @@
 
 .hero__button {
   margin-bottom: 134px;
+}
+
+.hero__video-player {
+  width: 482px;
+  height: 317px;
+  z-index: 10;
+
+  @include vp-1199 {
+    width: 442px;
+    height: 300px;
+  }
 }

@@ -117,6 +117,26 @@
   background-color: transparent;
   padding: 0;
   color: $color-elephant;
+  cursor: pointer;
+  padding: 3px 0;
+
+  &:disabled {
+    border: none;
+    cursor: default;
+  }
+
+  @include hover {
+    border-bottom: 1px solid #2d383f;
+  }
+
+  @include focus {
+    border: 1px solid #2d383f;
+    outline: none;
+  }
+
+  @include active {
+    border: none;
+  }
 
   @include vp-1199 {
     font-size: 14px;
@@ -157,6 +177,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #2d383f;
+
+  &:disabled {
+    border: 1px solid #999999;
+    fill: #999999;
+  }
+
+  @include hover-focus {
+    border: 1px solid #2d383f;
+    fill: #2d383f;
+    outline: none;
+  }
+
+  @include active {
+    border: 1px solid $color-navy-blue;
+    fill: $color-default-white;
+    background-color: $color-navy-blue;
+  }
 
   @include vp-1199 {
     width: 32px;

@@ -12,12 +12,18 @@
   transition: opacity $trans-default;
 
   &:disabled {
-    opacity: 0.5;
-
-    pointer-events: none;
+    background-color: #999999;
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: transparent;
+    outline: 1px solid #1c3374;
+    outline-offset: -1px;
+    color: #1c3374;
+  }
+
+  @include active {
+    background-color: #1c3374;
+    color: $color-default-white;
   }
 }
