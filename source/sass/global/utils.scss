@@ -97,3 +97,39 @@
     display: block;
   }
 }
+
+.br--tablet-mobile {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.br--tablet-desktop {
+  display: block;
+
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.br--mobile-desktop {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}

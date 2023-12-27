@@ -26,7 +26,7 @@ window.addEventListener('resize', () => {
   }
 });
 
-navToggle.addEventListener('click', function () {
+navToggle.addEventListener('click', () => {
   if (document.documentElement.clientWidth > 767) {
     if (navHeader.classList.contains('header__nav--closed')) {
       navHeader.classList.remove('header__nav--closed');

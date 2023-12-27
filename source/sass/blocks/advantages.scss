@@ -50,8 +50,8 @@
   opacity: 3%;
   position: absolute;
   top: 75px;
-  left:50%;
-  transform:translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @include vp-767 {
     font-size: 26px;
@@ -126,7 +126,7 @@
 }
 
 .advantages__item svg {
-  border: 1px solid #0266C1;
+  border: 1px solid #0266c1;
   padding: 14px;
   width: 54px;
   height: 54px;
@@ -182,8 +182,8 @@
   background-color: $color-navy-blue;
   width: 37px;
   height: 35px;
-  left:50%;
-  transform:translate(-105%, -50%);
+  left: 50%;
+  transform: translate(-105%, -50%);
   top: 565px;
   display: flex;
   align-items: center;
@@ -212,8 +212,8 @@
   background-color: $color-navy-blue;
   width: 37px;
   height: 35px;
-  left:50%;
-  transform:translate(5%, -50%);
+  left: 50%;
+  transform: translate(5%, -50%);
   top: 565px;
   display: flex;
   align-items: center;

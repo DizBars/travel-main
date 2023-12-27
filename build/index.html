@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lifetour - Организация походов в горы.">
   <title>Lifetour</title>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -42,22 +42,22 @@
             </button>
             <ul class="header__nav-list">
               <li>
-                <button data-nav="tours">Туры</button>
+                <button type="button" data-nav="tours">Туры</button>
               </li>
               <li>
-                <button data-nav="education">Обучение</button>
+                <button type="button" data-nav="education">Обучение</button>
               </li>
               <li>
-                <button data-nav="about">О нас</button>
+                <button type="button" data-nav="about">О нас</button>
               </li>
               <li>
-                <button data-nav="reviews">Отзывы</button>
+                <button type="button" data-nav="reviews">Отзывы</button>
               </li>
               <li>
-                <button data-nav="photos">Фотографии</button>
+                <button type="button" data-nav="photos">Фотографии</button>
               </li>
               <li>
-                <button data-nav="contacts">Контакты</button>
+                <button type="button" data-nav="contacts">Контакты</button>
               </li>
             </ul>
           </nav>
@@ -88,13 +88,13 @@
               </div>
               <div class="hero__item">
                 <h2>
-                  Захватывающие<br> вершины Кавказа
+                  Захватывающие вершины Кавказа
                 </h2>
-                <p>В сопровождении опытных гидов<br class="br--mobile"> вы пройдёте<br class="br--tablet"> через
-                  потрясающие ландшафты и совершите<br class="br--desktop"> восход <br class="br--mobile">на
+                <p>В сопровождении опытных гидов вы пройдёте<br class="hero__br br br--tablet"> через
+                  потрясающие ландшафты и совершите <br class="hero__br br br--desktop">восход <br class="hero__br br br--mobile">на
                   вершину
                   горы Чегет.</p>
-                <button class="hero__button button button--primary">Смотреть тур</button>
+                <button class="hero__button button button--primary"  type="button">Смотреть тур</button>
                 <div class="hero__video" data-video="container">
                   <div class="hero__video-overlay video-overlay" data-video="overlay">
                     <picture>
@@ -142,13 +142,13 @@
               </div>
               <div class="hero__item">
                 <h2>
-                  Невероятная<br class="br--tablet"><br class="br--desktop"> природа Камчатки
+                  Невероятная природа Камчатки
                 </h2>
-                <p>Незабываемое приключение,<br class="br--mobile"> во время которого <br class="br--tablet">вы
-                  отправитесь<br class="br--mobile"> в путешествие по
+                <p>Незабываемое приключение,<br class="hero__br br br--mobile"> во время которого <br class="hero__br br br--tablet">вы
+                  отправитесь<br class="hero__br br br--mobile">в путешествие по
                   одному из самых
-                  нетронутых уголков дикой<br class="br--mobile"> природы в мире.</p>
-                <button class="hero__button button button--primary">Смотреть тур</button>
+                  нетронутых уголков дикой <br class="hero__br br br--mobile">природы в мире.</p>
+                <button class="hero__button button button--primary" type="button">Смотреть тур</button>
                 <div class="hero__photo">
                   <ul>
                     <li>
@@ -201,15 +201,13 @@
                 <h2>
                   Магические пейзажи Алтайского Края
                 </h2>
-                <p>Алтайский трекинг-тур —<br class="br--mobile"> это захватывающее приключение<br class="br--mobile"> с
-                  посещением магических<br> и захватывающих дух
+                <p>Алтайский трекинг-тур —<br class="hero__br br br--mobile"> это захватывающее приключение<br class="hero__br br br--mobile"> с
+                  посещением магических<br>и захватывающих дух
                   ландшафтов Алтайских гор.</p>
-                <button class="hero__button button button--primary">Смотреть тур</button>
+                <button class="hero__button button button--primary"  type="button">Смотреть тур</button>
                 <div class="hero__audio">
-                  <iframe frameborder="0" loading=lazy style="border:none;width:380px;height:220px;border-radius:12px;" width="380"
-                    height="220" src="https://music.yandex.ru/iframe/track/112912322/25474374">Слушайте <a
-                      href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
-                      фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
+                  <iframe title="Подкаст Про код" loading="lazy" width="380"
+                    height="220" src="https://music.yandex.ru/iframe/track/112912322/25474374"></iframe>
                 </div>
                 <div class="hero__info">
                   <span>
@@ -231,7 +229,7 @@
       </div>
     </header>
     <main>
-      <section class="tours" data-tours data-test="tours">
+      <section class="tours" data-tours="#" data-test="tours">
         <div class="container">
           <h2>Ближайшие туры</h2>
           <span>Ближайшие туры</span>
@@ -258,7 +256,7 @@
                     </div>
                   </div>
                   <h3>
-                    Путешествие<br> вокруг Эльбруса
+                    Путешествие<br>вокруг Эльбруса
                   </h3>
 
                   <div class="tours__info">
@@ -320,7 +318,7 @@
                     </div>
                   </div>
                   <h3>
-                    Путь к подножию<br> Белухи
+                    Путь к подножию<br>Белухи
                   </h3>
                   <div class="tours__info">
                     <div class="tours__complexity">
@@ -381,7 +379,7 @@
                     </div>
                   </div>
                   <h3>
-                    Через Фишт<br> к Чёрному морю<br> и обратно
+                    Через Фишт<br>к Чёрному морю<br>и обратно
                   </h3>
                   <div class="tours__info">
                     <div class="tours__complexity">
@@ -442,7 +440,7 @@
                     </div>
                   </div>
                   <h3>
-                    Путешествие<br> вокруг Эльбруса
+                    Путешествие<br>вокруг Эльбруса
                   </h3>
 
                   <div class="tours__info">
@@ -485,12 +483,12 @@
               </li>
             </ul>
           </div>
-          <div class="swiper-button-prev tours__button--prev">
+          <div class="swiper-button-prev tours__button tours__button--prev">
             <svg width="13" height="8" role="img">
               <use href="img/sprite.svg#left"></use>
             </svg>
           </div>
-          <div class="swiper-button-next tours__button--next">
+          <div class="swiper-button-next tours__button tours__button--next">
             <svg width="13" height="8" role="img">
               <use href="img/sprite.svg#right"></use>
             </svg>
@@ -513,13 +511,13 @@
           </picture>
         </div>
       </section>
-      <section class="education" data-education data-test="training">
+      <section class="education" data-education="#" data-test="training">
         <div class="container">
           <h2>Обучение</h2>
           <span>Обучение</span>
-          <p>Обучение проводится квалифицированными специалистами,<br class="br--mobile"> за плечами которых десятки<br class="br--desktop">
+          <p>Обучение проводится квалифицированными специалистами, <br class="education__br br br--mobile">за плечами которых десятки<br class="education__br br br--desktop">
             пройденных маршрутов
-            Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи<br class="br--mobile"> и других.</p>
+            Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи <br class="education__br br br--mobile">и других.</p>
           <div class="education__swiper swiper">
             <h3>Наши инструкторы</h3>
             <ul class="education__list swiper-wrapper">
@@ -539,7 +537,7 @@
                       alt="Александр Прокофьев.">
                   </picture>
                   <h4>Александр<br> Прокофьев</h4>
-                  <p>Строгий и внимательный инструктор, весёлый <br class="br--tablet"> и общительный человек. Любит
+                  <p>Строгий и внимательный инструктор, весёлый <br class="education__br br br--tablet"> и общительный человек. Любит
                     природу.</p>
                   <a href="https://vk.com/htmlacademy">
                     <span class="visually-hidden">Ссылка на вк.</span>
@@ -565,9 +563,9 @@
                       alt="Светлана Афиногенова.">
                   </picture>
                   <h4>Светлана<br> Афиногенова</h4>
-                  <p>Видеть мир вокруг, познавать<br class="br--desktop"> его опасности, находить друг друга,
+                  <p>Видеть мир вокруг, познавать<br class="education__br br br--desktop"> его опасности, находить друг друга,
                     становиться ближе, чувствовать
-                    — <br class="br--desktop">в этом назначение жизни.</p>
+                    — <br class="education__br br br--desktop">в этом назначение жизни.</p>
                   <a href="https://vk.com/htmlacademy">
                     <span class="visually-hidden">Ссылка на вк.</span>
                     <svg width="14" height="8" role="img">
@@ -592,8 +590,8 @@
                       alt="Надежда Колесниченко.">
                   </picture>
                   <h4>Надежда<br> Колесниченко</h4>
-                  <p>Участники говорят,<br class="br--tablet"> что Надежда ответственная, приятная в общении,<br> и в
-                    поездках<br class="br--tablet"> с ней чувствуешь
+                  <p>Участники говорят,<br class="education__br br br--tablet"> что Надежда ответственная, приятная в общении,<br> и в
+                    поездках <br class="education__br br br--tablet">с ней чувствуешь
                     себя спокойно и уверенно.</p>
                   <a href="https://vk.com/htmlacademy">
                     <span class="visually-hidden">Ссылка на вк.</span>
@@ -641,13 +639,13 @@
               </li>
             </ul>
           </div>
-          <div class="swiper-button-prev education__button--prev">
-            <svg width="13" height="8" role="img">
+          <div class="swiper-button-prev education__button education__button--prev">
+            <svg width="13" height="9" role="img">
               <use href="img/sprite.svg#left"></use>
             </svg>
           </div>
-          <div class="swiper-button-next education__button--next">
-            <svg width="13" height="8" role="img">
+          <div class="swiper-button-next education__button education__button--next">
+            <svg width="13" height="9" role="img">
               <use href="img/sprite.svg#right"></use>
             </svg>
           </div>
@@ -670,7 +668,7 @@
                   <use href="img/sprite.svg#boots"></use>
                 </svg>
               </div>
-              <p>Подготовка<br class="br--desktop"> и техническое снаряжение в походах</p>
+              <p>Подготовка<br class="education__br br br--desktop"> и техническое снаряжение в походах</p>
             </li>
             <li class="education__pine-tree">
               <div class="education__svg">
@@ -678,7 +676,7 @@
                   <use href="img/sprite.svg#pine-tree"></use>
                 </svg>
               </div>
-              <p>Лекции<br class="br--desktop"> по окружающей среде, экологии и гигиене</p>
+              <p>Лекции<br class="education__br br br--desktop"> по окружающей среде, экологии и гигиене</p>
             </li>
             <li class="education__mountain">
               <div class="education__svg">
@@ -686,7 +684,7 @@
                   <use href="img/sprite.svg#mountain"></use>
                 </svg>
               </div>
-              <p>Разъяснение<br class="br--desktop"> сложности<br class="br--mobile"> горных<br class="br--desktop"> препятствий</p>
+              <p>Разъяснение<br class="education__br br br--desktop"> сложности<br class="education__br br br--mobile"> горных<br class="education__br br br--desktop"> препятствий</p>
             </li>
           </ul>
           <div class="education__points">
@@ -696,7 +694,7 @@
           </div>
         </div>
       </section>
-      <section class="about" data-about data-test="about">
+      <section class="about" data-about="#" data-test="about">
         <div class="about__background">
           <picture>
             <source type="image/png" media="(max-width: 767px)"
@@ -718,24 +716,24 @@
           <ul class="about__list">
             <li class="about__item">
           <h3>История компании</h3>
-          <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения,<br class="br--tablet">
+          <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения,<br class="about__br br br--tablet">
             нам это настолько
-            понравилось,<br class="br--tablet"> что мы этим стали жить.<br class="br--desktop"> Спустя 5 лет, в 2005
+            понравилось, <br class="about__br br br--tablet">что мы этим стали жить. <br class="about__br br br--desktop">Спустя 5 лет, в 2005
             году мы основали компанию, чтобы показывать
             людям удивительные места нашей страны.</p>
           </li>
           <li class="about__item">
           <h3>Наша цель</h3>
-          <p>Подарить вам незабываемые впечатления от похода в горы.<br class="br--tablet"> Мы берём на себя <br
-              class="br--mobile"><br class="br--tablet">все организационные вопросы.<br class="br--tablet"><br class="br--mobile"> При
-            организации мы обязательно учтём<br class="br--desktop"> все ваши пожелания.<br class="br--tablet"> Вам
+          <p>Подарить вам незабываемые впечатления от похода в горы. <br class="about__br br br--tablet">Мы берём на себя <br
+              class="about__br br br--tablet-mobile">все организационные вопросы. <br class="about__br br br--tablet-mobile">При
+            организации мы обязательно учтём <br class="about__br br br--desktop">все ваши пожелания. <br class="about__br br br--tablet">Вам
             останется только наслаждаться незабываемым
-            приключением<br class="br--tablet"> в приятной компании.</p>
+            приключением <br class="about__br br br--tablet">в приятной компании.</p>
           </li>
           </ul>
         </div>
       </section>
-      <section class="reviews" data-reviews data-test="reviews">
+      <section class="reviews" data-reviews="#" data-test="reviews">
         <div class="reviews__container container">
           <h2>Отзывы</h2>
           <span>Отзывы</span>
@@ -752,11 +750,11 @@
                     alt="Фролов Александр.">
                 </picture>
                 <div class="reviews__item">
-                  <p>Осенью ходили в поход на Алтай<br class="br--mobile"> с друзьями. Впечатления потрясающие! Инструкторы — настоящие
-                    эксперты — всему научили,<br class="br--tablet"><br class="br--desktop"> все показали. Делились увлекательными историями о местах, людях,
+                  <p>Осенью ходили в поход на Алтай <br class="reviews__br br br--mobile">с друзьями. Впечатления потрясающие! Инструкторы — настоящие
+                    эксперты — всему научили, <br class="reviews__br br br--tablet-desktop">все показали. Делились увлекательными историями о местах, людях,
                     культуре места.</p>
-                  <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после.<br class="br--mobile"> Ещё никогда не отдыхал так
-                    душой <br class="br--mobile">и телом. Всем очень рекомендую!</p>
+                  <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. <br class="reviews__br br br--mobile">Ещё никогда не отдыхал так
+                    душой <br class="reviews__br br br--mobile">и телом. Всем очень рекомендую!</p>
                   <h3>Фролов Александр</h3>
                   <span>38 лет, Москва</span>
                 </div>
@@ -812,7 +810,7 @@
                 </picture>
                 <div class="reviews__item">
                   <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
-                    наконец-то, преодолев все трудности и препятствия, взбираешься на вершину. </p>
+                    наконец-то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
                   <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у
                     костра и пели песни. Обязательно повторю такое приключение!</p>
                   <h3>Елена Пирогова</h3>
@@ -821,12 +819,12 @@
               </li>
             </ul>
           </div>
-          <div class="reviews__button--prev swiper-button-prev">
+          <div class="reviews__button reviews__button--prev swiper-button-prev">
             <svg width="13" height="8" role="img">
               <use href="img/sprite.svg#left"></use>
             </svg>
           </div>
-          <div class="reviews__button--next swiper-button-next">
+          <div class="reviews__button reviews__button--next swiper-button-next">
             <svg width="13" height="8" role="img">
               <use href="img/sprite.svg#right"></use>
             </svg>
@@ -856,9 +854,9 @@
                 </svg>
                 <h3>Безопасность</h3>
                 <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем
-                  планы действий<br class="br--mobile"><br class="br--desktop"> на случай непредвиденных обстоятельств<br class="br--mobile"><br class="br--desktop">
-                  и даем гарантию полной безопасности<br class="br--mobile"><br class="br--desktop">
-                  во время всего тура.</p>
+                  планы действий <br class="advantages__br br br--mobile-desktop">на случай непредвиденных обстоятельств <br class="advantages__br br br--mobile-desktop">
+                и даем гарантию полной безопасности <br class="advantages__br br br--mobile-desktop">
+                во время всего тура.</p>
               </div>
             </li>
             <li class="advantages__ratio-wrapper swiper-slide">
@@ -868,9 +866,9 @@
                 </svg>
                 <h3>Экспертиза и знания</h3>
                 <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
-                  безопасности.<br class="br--mobile"> Это гарантирует,<br class="br--tablet"> что наши клиенты находятся<br> в надежных руках
+                  безопасности. <br class="advantages__br br br--mobile">Это гарантирует, <br class="advantages__br br br--tablet">что наши клиенты находятся <br>в надежных руках
                   и могут в полной мере
-                  насладиться опытом<br class="br--tablet"> без опасений.</p>
+                  насладиться опытом <br class="advantages__br br br--tablet">без опасений.</p>
               </div>
             </li>
             <li class="advantages__ratio-wrapper swiper-slide">
@@ -879,11 +877,11 @@
                   <use href="img/sprite.svg#boots-1"></use>
                 </svg>
                 <h3>Оборудование и снаряжение</h3>
-                <p>Мы предоставляем клиентам<br class="br--tablet"><br class="br--desktop"> все необходимое оборудование, необходимое для путешествия.<br
-                    class="br--tablet"> Это
-                  избавляет клиентов<br class="br--tablet"> от необходимости покупать, брать<br class="br--tablet"><br class="br--desktop"> с собой снаряжение,<br class="br--mobile"> что
+                <p>Мы предоставляем клиентам<br class="advantages__br br br--tablet-desktop"> все необходимое оборудование, необходимое для путешествия. <br
+                    class="advantages__br br br--tablet">Это
+                  избавляет клиентов <br class="advantages__br br br--tablet">от необходимости покупать, брать <br class="advantages__br br br--tablet-desktop">с собой снаряжение, <br class="advantages__br br br--mobile">что
                   делает путешествие
-                  более удобным<br class="br--mobile"><br class="br--tablet"> и экономически выгодным.</p>
+                  более удобным <br class="advantages__br br br--tablet-mobile">и экономически выгодным.</p>
               </div>
             </li>
             <li class="advantages__ratio-wrapper swiper-slide">
@@ -892,9 +890,9 @@
                   <use href="img/sprite.svg#path"></use>
                 </svg>
                 <h3>Индивидуальные маршруты</h3>
-                <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства<br class="br--mobile"> и интересам. <br
-                    class="br--tablet">Мы также можем
-                  адаптировать маршруты к вашим конкретным потребностям и предпочтениям,<br class="br--desktop"> чтобы
+                <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства<br class="advantages__br br br--mobile"> и интересам. <br
+                    class="advantages__br br br--tablet">Мы также можем
+                  адаптировать маршруты к вашим конкретным потребностям и предпочтениям, <br class="advantages__br br br--desktop">чтобы
                   вы получили
                   индивидуальный опыт.</p>
               </div>
@@ -904,25 +902,25 @@
                 <svg width="22" height="22" role="img">
                   <use href="img/sprite.svg#leaf"></use>
                 </svg>
-                <h3>Бережное отношение<br class="br--mobile"><br class="br--tablet"> к природе</h3>
+                <h3>Бережное отношение <br class="advantages__br br br--tablet-mobile">к природе</h3>
                 <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
                   воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
               </div>
             </li>
           </ul>
         </div>
-        <div class="swiper-button-prev advantages__button--prev">
+        <div class="swiper-button-prev advantages__button advantages__button--prev">
           <svg width="13" height="8" role="img">
             <use href="img/sprite.svg#left"></use>
           </svg>
         </div>
-        <div class="swiper-button-next advantages__button--next">
+        <div class="swiper-button-next advantages__button advantages__button--next">
           <svg width="13" height="8" role="img">
             <use href="img/sprite.svg#right"></use>
           </svg>
         </div>
       </section>
-      <section class="gallery" data-photos data-test="gallery">
+      <section class="gallery" data-photos="#" data-test="gallery">
         <div class="gallery__wrapper">
           <h2>Фотогалерея</h2>
           <span>Фотогалерея</span>
@@ -953,11 +951,9 @@
               <div class="gallery__item">
                 <picture>
                   <source type="image/png" media="(max-width: 767px)"
-                    srcset="img/content/gallery-2-mobile.png 1x, img/content/gallery-2-mobile@2x.png 2x" width="158.5"
-                    height="100">
+                    srcset="img/content/gallery-2-mobile.png 1x, img/content/gallery-2-mobile@2x.png 2x">
                   <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/content/gallery-2-mobile.webp 1x, img/content/gallery-2-mobile@2x.webp 2x" width="158.5"
-                    height="100">
+                    srcset="img/content/gallery-2-mobile.webp 1x, img/content/gallery-2-mobile@2x.webp 2x" >
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/content/gallery-2-tablet.webp 1x, img/content/gallery-2-tablet@2x.webp  2x">
                   <source type="image/png" media="(max-width: 1199px)"
@@ -969,11 +965,9 @@
                 </picture>
                 <picture>
                   <source type="image/png" media="(max-width: 767px)"
-                    srcset="img/content/gallery-3-mobile.png 1x, img/content/gallery-3-mobile@2x.png 2x" width="158.5"
-                    height="157">
+                    srcset="img/content/gallery-3-mobile.png 1x, img/content/gallery-3-mobile@2x.png 2x">
                   <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/content/gallery-3-mobile.webp 1x, img/content/gallery-3-mobile@2x.webp 2x" width="158.5"
-                    height="157">
+                    srcset="img/content/gallery-3-mobile.webp 1x, img/content/gallery-3-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/content/gallery-3-tablet.webp 1x, img/content/gallery-3-tablet@2x.webp  2x">
                   <source type="image/png" media="(max-width: 1199px)"
@@ -1055,12 +1049,12 @@
             </li>
           </ul>
         </div>
-        <div class="swiper-button-prev gallery__button--prev">
+        <div class="swiper-button-prev gallery__button gallery__button--prev">
           <svg width="13" height="8" role="img">
             <use href="img/sprite.svg#left"></use>
           </svg>
         </div>
-        <div class="swiper-button-next gallery__button--next">
+        <div class="swiper-button-next gallery__button gallery__button--next">
           <svg width="13" height="8" role="img">
             <use href="img/sprite.svg#right"></use>
           </svg>
@@ -1082,7 +1076,7 @@
           </picture>
         </div>
         <h2>Остались вопросы?</h2>
-        <p>Заполните форму и наш оператор<br class="br--tablet"> свяжется с вами для консультации.</p>
+        <p>Заполните форму и наш оператор<br class="questions__br br br--tablet"> свяжется с вами для консультации.</p>
         <div data-form-validate data-callback="base">
           <form method="post" action="https://echo.htmlacademy.ru" novalidate>
             <div class="form form__wrapper">
@@ -1109,12 +1103,12 @@
       </section>
     </main>
     <footer class="footer" data-test="footer">
-      <section class="contacts" data-contacts >
+      <section class="contacts" data-contacts="#" >
         <div class="contacts__container">
           <div class="contacts__wrapper">
             <h2>Контакты</h2>
             <span>Контакты</span>
-            <p>Свяжитесь с нами любым удобным <br class="br--mobile">для вас способом <br class="br--desktop"><br class="br--tablet">или приходите<br class="br--mobile"> к нам в гости. Мы будем рады поделиться
+            <p>Свяжитесь с нами любым удобным <br class="contacts__br br br--mobile">для вас способом <br class="contacts__br br br--tablet-desktop">или приходите<br class="contacts__br br br--mobile"> к нам в гости. Мы будем рады поделиться
               увлекательными историями и подобрать для вас тур.</p>
             <ul class="contacts__info">
               <li>
@@ -1124,6 +1118,7 @@
                 <div class="contacts__info-wrapper">
                   <h3>Телефон</h3>
                   <p>+7 983 745-45-45</p>
+                </div>
               </li>
               <li>
                 <svg width="26" height="26" role="img">
@@ -1140,7 +1135,7 @@
                 </svg>
                 <div class="contacts__info-wrapper">
                   <h3>Адрес</h3>
-                  <p>г. Москва, пр-т Мира,<br class="br--mobile"> д. 14, офис 101</p>
+                  <p>г. Москва, пр-т Мира,<br class="contacts__br br br--mobile"> д. 14, офис 101</p>
                 </div>
               </li>
             </ul>
@@ -1162,6 +1157,7 @@
         </div>
       </section>
       <section class="footer__lower">
+        <h2 class="visually-hidden">Нижняя часть footer</h2>
       <div class="footer__container container">
         <div class="footer__wrapper">
           <svg width="142" height="42" role="img">
@@ -1170,26 +1166,26 @@
           <nav class="footer__nav">
             <ul>
               <li class="footer__tours">
-                <button data-nav="tours">Туры</button>
+                <button type="button" data-nav="tours">Туры</button>
               </li>
               <li class="footer__education">
-                <button data-nav="education">Обучение</button>
+                <button type="button" data-nav="education">Обучение</button>
               </li>
               <li class="footer__about">
-                <button data-nav="about">О нас</button>
+                <button type="button" data-nav="about">О нас</button>
               </li>
               <li class="footer__reviews">
-                <button data-nav="reviews">Отзывы</button>
+                <button type="button" data-nav="reviews">Отзывы</button>
               </li>
               <li class="footer__photos">
-                <button data-nav="photos">Фотографии</button>
+                <button type="button" data-nav="photos">Фотографии</button>
               </li>
               <li class="footer__contacts">
-                <button data-nav="contacts">Контакты</button>
+                <button type="button" data-nav="contacts">Контакты</button>
               </li>
             </ul>
           </nav>
-          <a class="footer__tel">8 800 725-32-32</a>
+          <a class="footer__tel" href="#">8 800 725-32-32</a>
         </div>
         <div class="footer__social social">
           <ul>

@@ -1284,7 +1284,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
-  color: #2D383F;
+  color: #2d383f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1501,6 +1501,48 @@ button,
   }
 }
 
+.br--tablet-mobile {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .br--tablet-mobile {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .br--tablet-mobile {
+    display: block;
+  }
+}
+
+.br--tablet-desktop {
+  display: block;
+}
+@media (max-width: 1199px) {
+  .br--tablet-desktop {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .br--tablet-desktop {
+    display: none;
+  }
+}
+
+.br--mobile-desktop {
+  display: block;
+}
+@media (max-width: 1199px) {
+  .br--mobile-desktop {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .br--mobile-desktop {
+    display: block;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -1528,7 +1570,7 @@ button,
   line-height: 16px;
   font-weight: 500;
   color: #ffffff;
-  background: #0266C1;
+  background: #0266c1;
   border: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
@@ -1587,7 +1629,7 @@ button,
           align-items: center;
   width: 100%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
   .custom-input label,
 .custom-textarea label {
     -webkit-box-align: center;
@@ -1659,10 +1701,10 @@ button,
 .custom-textarea label textarea:active {
   border: 1px solid #1c3373;
 }
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
   .custom-input__label,
 .custom-textarea__label {
-    margin: 0 0 18px 0;
+    margin: 0 0 18px;
   }
 }
 .custom-input__error,
@@ -1675,7 +1717,7 @@ button,
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
   .custom-input__error,
 .custom-textarea__error {
     bottom: 20px;
@@ -1757,7 +1799,7 @@ button,
 }
 
 .header__wrapper {
-  background-color: #0266C1;
+  background-color: #0266c1;
   padding: 32px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1893,7 +1935,6 @@ button,
   font-weight: 400;
   border: none;
   background-color: transparent;
-  padding: 0;
   cursor: pointer;
   padding: 3px 0;
 }
@@ -1919,7 +1960,7 @@ button,
     font-weight: 700;
     line-height: 16px;
     text-align: left;
-    color: #2D383F;
+    color: #2d383f;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 0;
@@ -2129,7 +2170,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero__item {
-    padding: 0 15px;
+    padding: 0 14px;
   }
 }
 
@@ -2142,6 +2183,7 @@ button,
   margin-top: 200px;
   margin-bottom: 23px;
   z-index: 3;
+  max-width: 921px;
 }
 @media (max-width: 1199px) {
   .hero__item h2 {
@@ -2149,6 +2191,7 @@ button,
     line-height: 56px;
     margin-top: 212px;
     margin-bottom: 13px;
+    max-width: 680px;
   }
 }
 @media (max-width: 767px) {
@@ -2180,6 +2223,7 @@ button,
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 60px;
+    max-width: 290px;
   }
 }
 
@@ -2246,7 +2290,6 @@ button,
 
 .hero__photo ul li:first-child {
   position: absolute;
-  z-index: 3;
   width: 308px;
   left: -133px;
   top: -93px;
@@ -2286,6 +2329,11 @@ button,
   }
 }
 
+.hero__audio iframe {
+  border: none;
+  border-radius: 12px;
+}
+
 .hero__video-overlay {
   position: relative;
 }
@@ -2323,8 +2371,8 @@ button,
   fill: #ffffff;
 }
 .video-overlay__button:disabled::before {
-  border: 1px solid #0266C1;
-  fill: #0266C1;
+  border: 1px solid #0266c1;
+  fill: #0266c1;
 }
 .video-overlay__button::before {
   position: absolute;
@@ -2412,7 +2460,7 @@ button,
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
   margin-bottom: 51px;
 }
@@ -2433,7 +2481,7 @@ button,
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
-  color: #2D383F;
+  color: #2d383f;
   opacity: 3%;
   position: absolute;
   top: 106px;
@@ -2524,7 +2572,7 @@ button,
   font-weight: 500;
   line-height: 12px;
   padding: 6px 12.5px;
-  background-color: #0266C1;
+  background-color: #0266c1;
   position: relative;
   top: 0;
   display: -webkit-box;
@@ -2708,7 +2756,7 @@ button,
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.04em;
-  color: #2D383F;
+  color: #2d383f;
   text-transform: uppercase;
   gap: 12px;
   stroke: #2d383f;
@@ -2756,7 +2804,7 @@ button,
 
 .tours__button--prev {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   left: auto;
@@ -2797,7 +2845,7 @@ button,
 
 .tours__button--next {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   right: 120px;
@@ -2878,7 +2926,7 @@ button,
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
   margin-bottom: 32px;
 }
@@ -2901,7 +2949,7 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
   margin-bottom: 60px;
 }
@@ -2923,7 +2971,7 @@ button,
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
   margin-bottom: 52px;
 }
@@ -2942,7 +2990,7 @@ button,
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
-  color: #2D383F;
+  color: #2d383f;
   opacity: 3%;
   position: absolute;
   top: -17px;
@@ -2991,7 +3039,7 @@ button,
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 16px 0 14px;
 }
 
@@ -3017,7 +3065,7 @@ button,
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
 }
 @media (max-width: 1199px) {
@@ -3054,7 +3102,7 @@ button,
 
 .education__button--prev {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   left: auto;
@@ -3104,7 +3152,7 @@ button,
 
 .education__button--next {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   right: 120px;
@@ -3194,7 +3242,7 @@ button,
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
   margin-bottom: 27px;
 }
@@ -3313,7 +3361,7 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
 }
 @media (max-width: 1199px) {
@@ -3349,7 +3397,7 @@ button,
   width: -webkit-fill-available;
   width: -moz-available;
   width: fill;
-  background-color: #0266C1;
+  background-color: #0266c1;
   opacity: 0.2;
   position: absolute;
   z-index: 3;
@@ -3376,7 +3424,7 @@ button,
   content: "";
   height: 14px;
   width: 14px;
-  background-color: #0266C1;
+  background-color: #0266c1;
   position: absolute;
   z-index: 3;
   display: inline-block;
@@ -3467,7 +3515,7 @@ button,
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
   margin-bottom: 56px;
 }
@@ -3492,7 +3540,7 @@ button,
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
-  color: #2D383F;
+  color: #2d383f;
   opacity: 3%;
   position: absolute;
   top: 62px;
@@ -3519,7 +3567,7 @@ button,
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
   margin-bottom: 16px;
 }
@@ -3542,7 +3590,7 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
 }
 @media (max-width: 767px) {
@@ -3591,7 +3639,7 @@ button,
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
-  color: #2D383F;
+  color: #2d383f;
   margin: 0;
   margin-bottom: 27px;
 }
@@ -3614,7 +3662,7 @@ button,
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
-  color: #2D383F;
+  color: #2d383f;
   opacity: 3%;
   position: absolute;
   top: -17px;
@@ -3657,8 +3705,8 @@ button,
   gap: 30px;
   padding: 18px 40px 19px 19px;
   border: 1px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(28, 51, 115, 0.1);
-          box-shadow: 0px 0px 20px 0px rgba(28, 51, 115, 0.1);
+  -webkit-box-shadow: 0 0 20px 0 rgba(28, 51, 115, 0.1);
+          box-shadow: 0 0 20px 0 rgba(28, 51, 115, 0.1);
   background: #ffffff;
 }
 @media (max-width: 1199px) {
@@ -3673,7 +3721,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 20px 19px 20px 19px;
+    padding: 20px 19px;
     width: 320px;
     gap: 14px;
   }
@@ -3780,7 +3828,7 @@ button,
 
 .reviews__button--prev {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   left: auto;
@@ -3830,7 +3878,7 @@ button,
 
 .reviews__button--next {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   right: 120px;
@@ -4046,7 +4094,7 @@ button,
 }
 
 .advantages__item svg {
-  border: 1px solid #0266C1;
+  border: 1px solid #0266c1;
   padding: 14px;
   width: 54px;
   height: 54px;
@@ -4104,7 +4152,7 @@ button,
 
 .advantages__button--prev {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   left: 50%;
@@ -4149,7 +4197,7 @@ button,
 
 .advantages__button--next {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   left: 50%;
@@ -4421,7 +4469,7 @@ button,
 
 .gallery__button--prev {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   left: auto;
@@ -4473,7 +4521,7 @@ button,
 
 .gallery__button--next {
   position: absolute;
-  background-color: #0266C1;
+  background-color: #0266c1;
   width: 37px;
   height: 35px;
   right: 120px;
@@ -4989,7 +5037,7 @@ button,
 .footer__wrapper svg {
   margin-right: 28px;
   margin-left: 30px;
-  fill: #2D383F;
+  fill: #2d383f;
 }
 @media (max-width: 1199px) {
   .footer__wrapper svg {
@@ -5102,8 +5150,7 @@ button,
   font-weight: 400;
   border: none;
   background-color: transparent;
-  padding: 0;
-  color: #2D383F;
+  color: #2d383f;
   cursor: pointer;
   padding: 3px 0;
 }
@@ -5197,9 +5244,9 @@ button,
   outline: none;
 }
 .footer__social a:active:not(.focus-visible) {
-  border: 1px solid #0266C1;
+  border: 1px solid #0266c1;
   fill: #ffffff;
-  background-color: #0266C1;
+  background-color: #0266c1;
 }
 @media (max-width: 1199px) {
   .footer__social a {
@@ -5213,40 +5260,3 @@ button,
   font-weight: 300;
   line-height: 12px;
 }
-
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/

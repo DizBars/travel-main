@@ -69,9 +69,9 @@
     grid-row-gap: 5px;
     text-align: center;
     grid-template-areas:
-    "tours reviews"
-    "education photos"
-    "about contacts"
+      "tours reviews"
+      "education photos"
+      "about contacts";
   }
 }
 
@@ -115,7 +115,6 @@
   font-weight: 400;
   border: none;
   background-color: transparent;
-  padding: 0;
   color: $color-elephant;
   cursor: pointer;
   padding: 3px 0;

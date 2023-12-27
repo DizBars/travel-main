@@ -1,4 +1,4 @@
-.hero{
+.hero {
   height: 800px;
 
   @include vp-1199 {
@@ -62,7 +62,7 @@
   }
 
   @include vp-767 {
-    padding: 0 15px;
+    padding: 0 14px;
   }
 }
 
@@ -75,12 +75,14 @@
   margin-top: 200px;
   margin-bottom: 23px;
   z-index: 3;
+  max-width: 921px;
 
   @include vp-1199 {
     font-size: 56px;
     line-height: 56px;
     margin-top: 212px;
     margin-bottom: 13px;
+    max-width: 680px;
   }
 
   @include vp-767 {
@@ -109,6 +111,7 @@
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 60px;
+    max-width: 290px;
   }
 }
 
@@ -123,7 +126,7 @@
     height: 300px;
     top: 687px;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 
   @include vp-767 {
@@ -132,7 +135,6 @@
 }
 
 .hero__video img {
-
   @include vp-1199 {
     width: 442px;
     height: 300px;
@@ -148,7 +150,7 @@
   @include vp-1199 {
     top: 719px;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 442px;
     height: 365px;
   }
@@ -166,7 +168,6 @@
 
 .hero__photo ul li:first-child {
   position: absolute;
-  z-index: 3;
   width: 308px;
   left: -133px;
   top: -93px;
@@ -201,6 +202,11 @@
   @include vp-767 {
     display: none;
   }
+}
+
+.hero__audio iframe {
+  border: none;
+  border-radius: 12px;
 }
 
 .hero__video-overlay {
@@ -273,7 +279,7 @@
   }
 }
 
-.hero__info span{
+.hero__info span {
   padding: 13px 19px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 12px;

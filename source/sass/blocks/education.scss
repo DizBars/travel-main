@@ -52,7 +52,7 @@
   }
 }
 
-.education h3{
+.education h3 {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -69,7 +69,7 @@
   }
 }
 
-.education span{
+.education span {
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
@@ -323,12 +323,15 @@
 .education__map {
   grid-area: 1 / 1 / 2 / 2;
 }
+
 .education__boots {
   grid-area: 1 / 2 / 2 / 3;
 }
+
 .education__pine-tree {
   grid-area: 2 / 2 / 3 / 3;
 }
+
 .education__mountain {
   grid-area: 2 / 1 / 3 / 2;
 }

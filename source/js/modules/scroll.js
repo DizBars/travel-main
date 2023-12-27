@@ -41,4 +41,3 @@ function scrollPhotos() {
 function scrollContacts() {
   scrollTargetContacts.scrollIntoView({block: 'center', behavior: 'smooth'});
 }
-

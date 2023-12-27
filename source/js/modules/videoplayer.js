@@ -5,7 +5,7 @@ const buttonPlay = document.querySelector('[data-video="play-button"]');
 const createVideo = () => {
   const video = document.createElement('iframe');
 
-  video.setAttribute('src', 'https://www.youtube.com/embed/o313dGKJAHY?autoplay=1');
+  video.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
   video.setAttribute('title', 'YouTube');
   video.setAttribute('frameborder', '0');
   video.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');

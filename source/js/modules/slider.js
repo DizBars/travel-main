@@ -183,4 +183,3 @@ window.addEventListener('resize', handleResize);
 
 
 export {heroSlider, toursSlider, educationSlider, reviewsSlider, advantagesSlider, gallerySlider, handleResize};
-
