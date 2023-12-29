@@ -25,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     padding: 0;
@@ -44,6 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
   @include hover-focus {
     fill: #1c3374;
@@ -82,6 +84,7 @@
   margin: 0;
   padding: 0 40px;
   gap: 30px;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     display: none;
@@ -108,7 +111,7 @@
   }
 }
 
-.header__nav button {
+.header__nav-list button {
   color: $color-default-white;
   font-size: 16px;
   line-height: 16px;
@@ -219,6 +222,9 @@
 .header__nav-toggle {
   display: none;
   z-index: 2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
   @include vp-1199 {
     display: block;

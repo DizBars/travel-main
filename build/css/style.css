@@ -1815,6 +1815,8 @@ button,
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .header__wrapper {
@@ -1842,6 +1844,8 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (hover: hover) {
   .header__logo-link:hover:not(.focus-visible) {
@@ -1894,6 +1898,8 @@ button,
   margin: 0;
   padding: 0 40px;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .header__nav ul {
@@ -1928,7 +1934,7 @@ button,
   }
 }
 
-.header__nav button {
+.header__nav-list button {
   color: #ffffff;
   font-size: 16px;
   line-height: 16px;
@@ -1938,24 +1944,24 @@ button,
   cursor: pointer;
   padding: 3px 0;
 }
-.header__nav button:disabled {
+.header__nav-list button:disabled {
   border: none;
   cursor: default;
 }
 @media (hover: hover) {
-  .header__nav button:hover:not(.focus-visible) {
+  .header__nav-list button:hover:not(.focus-visible) {
     border-bottom: 1px solid #ffffff;
   }
 }
-.header__nav button.focus-visible:focus {
+.header__nav-list button.focus-visible:focus {
   border: 1px solid #ffffff;
   outline: none;
 }
-.header__nav button:active:not(.focus-visible) {
+.header__nav-list button:active:not(.focus-visible) {
   border: none;
 }
 @media (max-width: 1199px) {
-  .header__nav button {
+  .header__nav-list button {
     font-size: 16px;
     font-weight: 700;
     line-height: 16px;
@@ -1967,52 +1973,52 @@ button,
   }
 }
 @media (max-width: 1199px) and (hover: hover) {
-  .header__nav button:hover:not(.focus-visible) {
+  .header__nav-list button:hover:not(.focus-visible) {
     color: #1c3374;
     outline: none;
   }
 }
 @media (max-width: 1199px) {
-  .header__nav button.focus-visible:focus {
+  .header__nav-list button.focus-visible:focus {
     color: #1c3374;
     outline: none;
   }
 }
 @media (max-width: 1199px) {
-  .header__nav button:active:not(.focus-visible) {
+  .header__nav-list button:active:not(.focus-visible) {
     color: #0266c1;
   }
 }
 @media (max-width: 1199px) {
-  .header__nav button:disabled {
+  .header__nav-list button:disabled {
     color: #0266c1;
   }
 }
 @media (max-width: 767px) {
-  .header__nav button {
+  .header__nav-list button {
     font-size: 14px;
     line-height: 14px;
   }
 }
 @media (max-width: 767px) and (hover: hover) {
-  .header__nav button:hover:not(.focus-visible) {
+  .header__nav-list button:hover:not(.focus-visible) {
     color: #1c3374;
     outline: none;
   }
 }
 @media (max-width: 767px) {
-  .header__nav button.focus-visible:focus {
+  .header__nav-list button.focus-visible:focus {
     color: #1c3374;
     outline: none;
   }
 }
 @media (max-width: 767px) {
-  .header__nav button:active:not(.focus-visible) {
+  .header__nav-list button:active:not(.focus-visible) {
     color: #0266c1;
   }
 }
 @media (max-width: 767px) {
-  .header__nav button:disabled {
+  .header__nav-list button:disabled {
     color: #0266c1;
   }
 }
@@ -2062,6 +2068,9 @@ button,
 .header__nav-toggle {
   display: none;
   z-index: 2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .header__nav-toggle {
@@ -5016,6 +5025,8 @@ button,
           align-items: center;
   gap: 114px;
   margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .footer__wrapper {
@@ -5060,6 +5071,8 @@ button,
   padding: 0;
   gap: 30px;
   margin-right: 59px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .footer__nav ul {
